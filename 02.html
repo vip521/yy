@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#pag {
+				width: 100%;
+				text-align: center;
+				overflow: hidden;
+			}
+			
+			.img1 {
+				width: 80%;
+				display: inline-block;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="page" id="pag" align="center">
+			<h1>下面是我的作品集</h1>
+			<h4 style="float: right;margin-right: 30%;">--</h4>
+		</div>
+	</body>
+	<!--<script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var pag = document.getElementById("pag");
+		for(var i = 1; i < 65; i++) {
+			var img = document.createElement('img');
+			img.className = 'img1';
+			img.src = "img/1-" + i + ".jpg";
+			pag.append(img);
+		}
+	</script>
+
+</html>
